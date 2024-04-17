@@ -1,0 +1,281 @@
+
+header {
+  background-color: #4596e7;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  
+.logo {
+  height: 50px; 
+}
+  
+
+.main-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.main-navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+  
+.main-navigation ul li:last-child {
+  margin-right: 0;
+}
+  
+.main-navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+  
+.user-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.user-navigation ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+.user-navigation ul li:last-child {
+    margin-right: 0;
+}
+  
+.user-navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.kodfun-galeri{
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.kodfun-galeri > div{
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.kodfun-galeri > div:hover{
+  flex: 5;
+}
+
+.films-list{
+  background-color: #a3c9f0;
+  margin-bottom: 10px;
+}
+
+.today-list-film, .willbe-list-film{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.today-list-film img, .willbe-list-film img{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 300px;
+  width: 200px;
+  border-radius: 5%;
+}
+
+.today-name, .willbe-name{
+  margin-left: 150px;
+}
+
+.line {
+  border-top: 1px solid #000; 
+  margin: 20px 0; 
+}
+
+section {
+  text-align: center;
+}
+
+.number {
+  display: inline-block;
+  margin: 10px; 
+  padding: 10px 20px; 
+  background-color: #057ef8; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-size: 16px; 
+}
+
+.number:hover {
+  background-color: #4596e7; 
+}
+
+footer{
+  background-color: #4596e7;
+  padding: 70px 0;
+  display: end;
+}
+
+.row{
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+#footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+#footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+#footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #071ffa;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+#footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+#footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #f8f4f4;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+#footer-col ul li a:hover{
+  color: #071ffa;
+  padding-left: 8px;
+}
+
+#footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #071ffa;
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+#footer-col .social-links a:hover{
+  color: white;
+  background-color: #152085;
+}
+
+/* Зміни для планшетних пристроїв*/
+@media only screen and (max-width: 1024px) {
+  .main-box {
+    width: 150px;
+    height: 250px;
+  }
+  .user-navigation{
+    margin-right: 5px;
+  }
+}
+
+/* Зміни для мобільних пристроїв */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .shadow-button-set {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #071ffa;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .change .shadow-button-set {
+    display: block;
+    color: #152085;
+  }
+
+  .today-name,
+  .willbe-name {
+    margin-left: 10px;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  #mobile-menu.active {
+    display: flex; /* або display: block; в залежності від потреб вашого дизайну */
+    flex-direction: column; /* Встановлюємо напрямок, щоб елементи відображались один під одним */
+    color: #152085; /* Додаткові стилі для вигляду вашого меню */
+  }
+
+  #mobile-menu.active a {
+    padding: 10px; /* Додаткові стилі для вигляду посилань у вашому меню */
+    color: black; /* Додаткові стилі для вигляду посилань у вашому меню */
+    text-decoration: none; /* Додаткові стилі для вигляду посилань у вашому меню */
+  }
+
+  .user-navigation{
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Гумовая блоковая верстка</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Предотвратим горизонтальный скролл на странице */
+    }
+    .sidebar {
+      width: 20%; /* Процент ширины боковой панели */
+      height: 100%;
+      background-color: yellow;
+      float: left;
+    }
+    .main-content {
+      width: calc(75% - 20px); /* Ширина, учитывающая 5% отступа справа */
+      height: 100%;
+      float: left;
+      position: relative; /* Позиционирование для футера */
+      margin-right: 5%; /* Процентный отступ справа */
+    }
+    .header, .content, .footer {
+      width: 100%;
+      background-color: blue;
+      padding: 10px;
+      box-sizing: border-box; /* Учёт padding в общей ширине */
+    }
+    .content {
+      background-color: #ffffff;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    /* Очищаем поток после использования float */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+<body>
+<div class="sidebar">Боковая панель</div>
+<div class="main-content clearfix">
+  <div class="header">Хедер</div>
+  <div class="content">Основной контент</div>
+  <div class="footer">Футер</div>
+</div>
+</body>
+</html>
+
+</html>

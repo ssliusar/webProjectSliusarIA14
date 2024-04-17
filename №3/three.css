@@ -1,0 +1,119 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+}
+
+.main-container {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px; 
+}
+
+.top-section {
+    display: flex;
+    width: 80%; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-container, .description-container, .product {
+    margin-right: 10px;
+}
+
+.image-container img, .product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.description-container {
+    flex: 3;
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.products-section {
+    display: flex;
+    width: 80%; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.product {
+    flex-basis: 23%; 
+    margin-bottom: 20px; 
+    background-color: #fff; 
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 10px; 
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s; 
+}
+
+a:hover, a:focus {
+    text-decoration: underline; 
+    color: #0056b3; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.1); 
+    margin-top: 20px; 
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right {
+    align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+    .top-section, .products-section, footer {
+        flex-direction: column;
+        align-items: center;
+        width: 95%; 
+    }
+
+    .product {
+        flex-basis: 100%; 
+    }
+
+    .footer-left, .footer-right {
+        align-items: center;
+        text-align: center;
+    }
+}

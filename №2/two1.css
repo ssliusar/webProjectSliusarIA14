@@ -1,0 +1,39 @@
+table.main-layout {
+    width: 100%;
+    height: 100vh;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+}
+
+.sidebar {
+    background-color: yellow;
+    width: 200px;
+    padding: 0;
+    height: 100vh;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 80px;
+}
+
+.header, .content, .footer {
+    background-color: blue;
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.footer {
+    background-color: blue;
+    padding: 10px;
+}
